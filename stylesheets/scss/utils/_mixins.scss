@@ -1,6 +1,6 @@
 @mixin createCol($col) {
   @for $i from 1 through $col{
-      $width: ($i / 12) * 100% - 1;
+      $width: ($i / $col) * 100% - 1;
 
   .col-#{$i} {
     width: $width;
