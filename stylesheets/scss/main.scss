@@ -1,0 +1,97 @@
+@import "utils/mixins",
+        "base/reset",
+        "layout/grid";
+
+
+*:not(body):not(html) {
+  box-sizing:border-box;
+  border:1px dashed #000;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  width: 100%;
+  .nav-links {
+    height: 100px;
+    width: 70%;
+    flex-basis: 70%;
+    display: flex;
+    justify-content: space-between;
+    .logo {
+      height: 100%;
+      width: 10%;
+      flex-basis: 10%;
+    }
+    .navbar {
+      height: 100%;
+      width: 70%;
+      flex-basis: 70%;
+      display: flex;
+      justify-content: space-between;
+      align-items: stretch;
+      a{
+        width: 11.1111111%;
+        flex-basis: 11.1111111%;
+      }
+    }
+  }
+  .log-in {
+    width: 80px;
+    height: 100px;
+  }
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 1400px;
+  margin: 0 auto;
+  padding-bottom: 1rem;
+  .hero {
+    padding: 1rem;
+    h1 {
+      text-align: center
+    }
+    p {
+      padding: 2rem 3rem 1rem;
+    }
+  }
+  .row {
+    width: 100%;
+    flex-basis: 100%;
+    padding: 1rem;
+    min-height: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    .card-twelve {
+      width: 100%;
+      flex-basis: 100%;
+      height: 100px;
+    }
+    .card-six {
+      width: 48%;
+      flex-basis: 48%;
+      height: 100px;
+    }
+    .card-four {
+      width: 24%;
+      flex-basis: 24%;
+      height: 100px;
+    }
+    .card-one {
+      width: 7.3333%;
+      flex-basis: 7.3333%;
+      height: 100px;
+    }
+  }//row
+  .gallery {
+    padding: 1rem;
+    .carousel {
+      padding: 40rem 3rem 1rem;
+    }
+  }
+}//container
