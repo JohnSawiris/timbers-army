@@ -1,0 +1,15 @@
+.carousel {
+  width: 70%;
+  margin: 0 auto;
+  height: 600px;
+  border-radius: 1rem;
+  margin-bottom: 2rem;
+  .slide {
+    position: relative;
+    width: 100%;
+    transition: all .75s ease-in;
+  }
+  img {
+    position: absolute;
+  }
+}
