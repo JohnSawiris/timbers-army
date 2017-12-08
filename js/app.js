@@ -12,9 +12,7 @@ document.addEventListener('DOMContentLoaded', function() {
     if(index > slides.length) {
       index = 1;
     }
-    slides[index - 1].style.opacity= 1;
+    slides[index - 1].style.opacity = 1;
     setTimeout(carousel, 3000);
   }
-
-
 });//DOM LOADED Event end

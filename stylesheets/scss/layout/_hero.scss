@@ -1,8 +1,11 @@
 .title {
   font-family: $font-family;
   text-align: center;
+  .ta-logo {
+    width: 15%;
+  }
   h1 {
-    font-size: 3rem;
+    font-size: 4rem;
   }
   .about {
     padding: 0 3rem;
